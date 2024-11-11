@@ -107,14 +107,6 @@ class _SettingsPageState extends State<SettingsPage> {
                 ),
                 const SizedBox(height: 32),
                 CheckBoxUI(
-                  name: 'showCompleteNotification',
-                  text: 'Mostrar notificação quando concluído',
-                  initialValue: cubit.settingsModel.showCompleteNotification,
-                  onChanged: (val) {
-                    cubit.showCompleteNotification = val ?? false;
-                  },
-                )..checkboxDefault,
-                CheckBoxUI(
                   name: 'restartAutomatically',
                   text: 'Reiniciar automaticamente',
                   initialValue: cubit.settingsModel.restartAutomatically,

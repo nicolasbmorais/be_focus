@@ -30,7 +30,7 @@ class UserSettingsModel {
       longBreak: 10,
       timerSound: 'Bip Alarm',
       showCompleteNotification: false,
-      restartAutomatically: false,
+      restartAutomatically: true,
     );
   }
 

@@ -31,7 +31,6 @@ class SettingsCubit extends Cubit<SettingsState> {
   int? shortBreak;
   int? longBreak;
   String? timeSoundName;
-  bool? showCompleteNotification;
   bool? restartAutomatically;
 
   Future<void> applyPreferences() async {
@@ -44,7 +43,7 @@ class SettingsCubit extends Cubit<SettingsState> {
           shortBreak: shortBreak ?? settingsModel.shortBreak,
           longBreak: longBreak ?? settingsModel.longBreak,
           timerSound: timeSoundName ?? settingsModel.timerSound,
-          showCompleteNotification: settingsModel.showCompleteNotification,
+          showCompleteNotification: false,
           restartAutomatically:
               restartAutomatically ?? settingsModel.restartAutomatically,
         );
